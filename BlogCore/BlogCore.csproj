@@ -8,11 +8,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap5.min.css" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.7" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.7" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.7" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlogCoreAccesoDatos\BlogCore.AccesoDatos.csproj" />
   </ItemGroup>
 
 </Project>
